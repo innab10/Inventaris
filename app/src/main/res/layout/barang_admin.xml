@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/brg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:text="Mencoba"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/Jml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/brg"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Jumlah Barang : "
+        android:textColor="@color/black" />
+
+
+    <TextView
+        android:id="@+id/jumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/brg"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/Jml"
+        android:text="Jumlah"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/brg"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/btn_hapus"
+        android:text="Edit" />
+
+    <Button
+        android:id="@+id/btn_hapus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/brg"
+        android:layout_alignParentRight="true"
+        android:text="Hapus" />
+
+</RelativeLayout>

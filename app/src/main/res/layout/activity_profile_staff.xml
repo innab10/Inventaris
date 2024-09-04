@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile_Staff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/propel2" />
+
+    <TextView
+        android:id="@+id/nama2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:text="Nama    : "
+        app:layout_constraintTop_toBottomOf="@+id/propel2"/>
+
+    <TextView
+        android:id="@+id/ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/nama2"
+        android:text="ID           : "/>
+
+    <TextView
+        android:id="@+id/pos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/ID"
+        android:text="Posisi    : " />
+
+
+    <EditText
+        android:id="@+id/editnama2"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/nama2"
+        app:layout_constraintTop_toTopOf="@+id/nama2" />
+
+    <EditText
+        android:id="@+id/edtid"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/ID"
+        app:layout_constraintTop_toTopOf="@+id/ID" />
+
+    <EditText
+        android:id="@+id/editpos"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/pos"
+        app:layout_constraintTop_toTopOf="@+id/pos" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Selesai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pos"
+        android:layout_marginTop="64dp"
+        android:onClick="done2"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

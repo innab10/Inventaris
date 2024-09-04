@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/txt_barang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:text="Mencoba" />
+
+    <TextView
+        android:id="@+id/Jml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Barang : "
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/txt_barang" />
+
+
+    <TextView
+        android:id="@+id/txt_jumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Jml"
+        android:layout_below="@id/txt_barang"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        android:text="Jumlah" />
+
+    <Button
+        android:id="@+id/btn_pinjam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_barang"
+        android:layout_alignParentRight="true"
+        android:text="Pinjam" />
+
+</RelativeLayout>
